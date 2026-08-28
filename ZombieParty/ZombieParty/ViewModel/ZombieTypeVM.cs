@@ -6,6 +6,9 @@ namespace ZombieParty.ViewModel
     {
         public ZombieType ZombieType { get; set; }
         public List<Zombie> ZombiesList { get; set; } = new List<Zombie>();
+        public int ZombiesCount { get; set; }
+        public double PointsAverage { get; set; }
+
 
     }
 }
