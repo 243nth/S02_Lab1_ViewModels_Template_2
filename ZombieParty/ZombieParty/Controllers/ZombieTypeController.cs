@@ -13,8 +13,8 @@ namespace ZombieParty.Controllers
         }
         public IActionResult Index()
         {
-            this.ViewBag.Maliste = _baseDonnees.ZombieTypes.ToList();
-            return View();
+           List<ZombieType> zombieTypesList= _baseDonnees.ZombieTypes.ToList();
+            return View(zombieTypesList);
         }
 
         //GET CREATE
